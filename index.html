@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center bg-violet-500 h-screen">
+      <h1>To do list</h1>
+      <input type="text" name="task" id="data"/>
+    <div id="app"></div>
+    <button class="addClick bg yellow 100 py-2 px-1 rounded border border black">Add task</button>
+  </div>
+  <dialog class="modal">
+    <h2>Update task</h2>
+    <input id="newData" type="text">
+      <div>
+        <button class="add">Add</button>
+        <button class="closeModal">Delete</button>
+      </div>
+  </dialog>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
